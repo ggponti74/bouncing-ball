@@ -48,7 +48,7 @@ function gameLoop() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     
     player.update();
-    player.draw(100, 100);
+    player.draw(0, 0);
     
     requestAnimationFrame(gameLoop);
 }
