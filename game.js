@@ -6,7 +6,7 @@ const images = {};
 async function loadResources(assets) {
     for (const [key, src] of Object.entries(assets)) {
         await new Promise((resolve) => {
-            const img = new Image();
+            const img = new ImageBitmap();
             img.onload = () => { images[key] = img; resolve(); };
             img.src = src;
         });
