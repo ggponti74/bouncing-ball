@@ -40,7 +40,7 @@ class Sprite {
 let player;
 async function init() {
     await loadResources({ hero: 'icon.png' });
-    player = new Sprite(images.hero, 192, 192, 0);
+    player = new Sprite(images.hero, 192, 192, 1);
     requestAnimationFrame(gameLoop);
 }
 
